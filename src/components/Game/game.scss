@@ -1,0 +1,219 @@
+.game-container {
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(2, 15rem);
+    grid-template-rows: repeat(1, 24rem);
+    align-items: center;
+    grid-gap: 10px;
+
+    @media(min-width: 376px) {
+        .game-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    h1 {
+        color: white;
+        height: 4.5rem;
+        width: 12.5rem;
+        text-align: center;
+    }
+}
+ 
+  .game-finished-container {
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(3, 13rem);
+    grid-template-rows: repeat(1, 24rem);
+    align-items: center;
+    
+    .result {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    
+        h1 {
+          color: white;
+          height: 2.5rem;
+          width: 12.5rem;
+          font-size: 2.3rem;
+          text-align: center;
+        }
+
+        button {
+          width: 11rem;
+          height: 3rem;
+          border-radius: 12px;
+          margin-top: 4rem;
+          color: hsl(229, 25%, 31%);
+          font-family: 'Barlow Semi Condensed', sans-serif;
+      }
+    }
+
+    @media(min-width: 376px) {
+        .game-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .game-item {
+      h1 {
+        color: white;
+        height: 4.5rem;
+        width: 12.5rem;
+        text-align: center;
+    } }
+
+}
+
+  .spock-rectangle {
+    border: 20px solid;
+    border-color: #52bed1;
+  }
+
+  .lizard-rectangle {
+    border: 20px solid hsl(261, 73%, 60%);
+  }
+
+  .rock-rectangle {
+    border: 20px solid hsl(349, 71%, 52%);
+  }
+
+  .paper-rectangle {
+    border: 20px solid hsl(230, 89%, 62%);
+  }
+
+  .scissors-rectangle {
+    border: 20px solid hsl(39, 89%, 49%);
+  }
+
+  .option-rectangle {
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .none-rectangle {
+    background-color:  #1a3250;;
+    border: 0
+  }
+
+
+@media(max-width: 375px) {
+    .game-finished-container {
+      display: grid;
+      grid-template-columns: repeat(3, 128px);
+      grid-template-rows: repeat(2, 226px);
+
+      align-items: center;
+
+        .result {
+          grid-column: 2;
+          grid-row: 2;
+        }
+
+        .player-item {
+          grid-column: 1;
+          grid-row: 1;
+          margin-left: 5rem;
+          margin-top: 2rem;
+        }
+
+        .house-item {
+          grid-column: 3;
+          margin-left: -5rem;
+          margin-top: 2rem;
+        }
+
+        .game-item {
+          line-height: 3rem;
+        }
+
+        h1 {
+          color: white;
+          height: 1.5rem;
+        }
+
+        .result {
+          h1 {
+            height: 5.5rem;
+            font-size: 2.2rem;
+          }
+        }
+    }
+
+  .game-container {
+    display: grid;
+    grid-template-columns: repeat(2, 169px);
+    grid-template-rows: repeat(1, 452px);
+    align-items: flex-start;
+
+    .player-item {
+      margin-top: 2rem;
+    }
+
+    .house-item {
+      margin-top: 2rem;
+    }
+
+      h1 {
+        color: white;
+        height: 1.5rem;
+      }
+    }
+
+    .option-item {
+        align-self: CENTER;
+      }
+
+    .game-item {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      line-height: 2.5rem;
+
+
+      h1 {
+        color: white;
+        height: 2rem;
+        width: 12.5rem;
+        text-align: center;
+      }
+    }
+
+    .spock-rectangle {
+        border: 15px solid;
+        border-color: #52bed1;
+    }
+
+    .lizard-rectangle {
+        border: 15px solid hsl(261, 73%, 60%);
+    }
+    
+    .rock-rectangle {
+        border: 15px solid hsl(349, 71%, 52%);
+      }
+  
+    .paper-rectangle {
+      border: 15px solid hsl(230, 89%, 62%);
+    }
+    
+    .scissors-rectangle {
+      border: 15px solid hsl(39, 89%, 49%);
+    }
+
+    .option-rectangle {
+        height: 8rem;
+        width: 8rem;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+  }
+  

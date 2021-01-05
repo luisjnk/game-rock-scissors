@@ -1,0 +1,13 @@
+  .option-rectangle {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  @media(max-width: 375px) {
+    .dashboard-header {
+      height: 5rem; 
+      width: 5rem;
+    }
+  }
